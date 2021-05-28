@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assetc/style.css">
+    <link href="https://fonts.googleapis.com/css2?
+       family=Lato:wght@400;700&display=swap"
+          rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__item">
+            <div id="title" class="header__title">My Survey Form</div>
+            <div id="description" class="header__subtitle">Thanks you for taking the time to help us improve the platform.</div>
+        </div>
+    </div><!--container-->
+</header>
+ <div class="forum">
+     <div class="container">
+         <form id="survey-form">
+             <div id="forum">
+
+                    <div class="forum__inner">
+                        <div class="forum__item">
+                            <label class="forum__label"
+                                   id="name-label" for="name">Name</label>
+                            <input class="forum__input" type="text" name="name"
+                                   id="name" placeholder="Enter your name" required>
+                        </div>
+                    </div><!--Name-->
+
+                    <div class="forum__inner">
+                        <div class="forum__item">
+                            <label class="forum__label"
+                                   id="email-label" for="name">Your Email</label>
+                            <input class="forum__input" type="email" name="email"
+                                   id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div><!--Email-->
+
+                    <div class="forum__inner">
+                        <div class="forum__item">
+                            <label class="forum__label"
+                                   id="number-label" for="number">Age(optional)</label>
+                            <input class="forum__input" type="number" name="age"
+                                   id="number" min="10" max="99"
+                                   placeholder="Enter your age" required>
+                        </div>
+                    </div><!--Age-->
+
+                    <button class="submit__btn" type="submit" id="submit">Submit</button>
+                </div><!--forum-->
+         </form>
+     </div><!--container-->
+ </div><!--forum-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script src="assetc/js.js"></script>
+</body>
+</html>
